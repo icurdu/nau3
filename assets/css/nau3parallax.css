@@ -1,0 +1,286 @@
+/*
+Plugin: jQuery Parallax
+Version 1.1.3
+Author: Ian Lunn
+Twitter: @IanLunn
+Author URL: http://www.ianlunn.co.uk/
+Plugin URL: http://www.ianlunn.co.uk/plugins/jquery-parallax/
+
+License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike). Please attribute work to Ian Lunn simply by leaving these comments in the source code or if you'd prefer, place a link on your website to http://www.ianlunn.co.uk/.
+*/
+
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*BASIC ELEMENTS*/
+
+
+
+body{
+	margin: 0;
+	min-width: 980px;
+	padding: 0;
+}
+
+/*p{
+	margin: 0 0 20px 0;	
+}*/
+
+p, ul{
+	font-family:'Helvetica Neue', Arial, Helvetica, sans-serif;
+	font-weight:lighter;
+	font-style:normal;
+	font-size: 24px;
+}
+
+img{
+	border: 0;
+}
+
+h1{
+	font-family:"Trocchi", serif;
+	font-weight:500;
+	font-style:normal;
+	font-size: 250px;
+	line-height: 0;
+}
+
+h2, #pixels{
+	font-family: 'Trocchi', cursive;
+	font-size: 72px;
+	text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+h3{
+	font-family:"Trocchi", serif;
+	font-weight:500;
+	font-style:normal;
+	font-size: 55px;
+}
+
+
+/*BUTTONS*/
+.nauthree {
+	margin-bottom: 30px;
+}
+
+.nau > a {
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.btn > a {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  font-family: "Trocchi", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 4px solid #FFFFFF;
+  border-radius: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+
+          -webkit-transition:  -webkit-transform 0.2s;
+    transition: transform 0.2s;
+}
+
+.btn > a:hover {
+	-webkit-transform:scale(1.4,1.4);
+    transform:scale(1.4,1.4);
+}
+
+
+
+/*FLOATING ELEMENTS*/
+
+.float-left{
+	float: left;
+	right: 200px;	
+	
+}
+
+.float-right{
+	float: right;
+	left: 
+	
+}
+
+.center{
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.center > h1 {
+	line-height: 0;
+}
+
+.center > h1,h2,h3,p {
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.story{
+	margin: 0 auto;
+	min-width: 980px;
+	width: 980px;
+}
+
+.story .float-left, .story .float-right{
+	
+	position: relative;
+	width: 50%;	
+}
+
+/*NAVBAR PARALLAX*/
+
+#nav{
+	list-style: none;
+	position: fixed;
+	right: 20px;
+}
+
+#nav li{
+	margin: 0 0 15px 0;	
+	-webkit-transition:  -webkit-transform 0.2s;
+    transition: transform 0.2s;
+}
+
+#nav li:hover{
+	margin: 0 0 15px 0;
+	-webkit-transform:scale(1.2,1.2);
+    transform:scale(1.2,1.2);
+}	
+}
+
+#header, #intro, #second,{
+	width: 100%;
+}
+
+
+
+
+/*FOTOS PARALLAX*/
+
+#intro{
+	background:url(../img/gh.jpg) 50% 0 no-repeat fixed;
+	/*background-color:#333333; */
+	color: white;
+	height: 950px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#second{
+	background: url(../img/colaboration.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 550px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+/*#second .bg{
+	background: url(../img/colaboramolt.png) 50% 0 no-repeat fixed;
+	height: 1300px;
+	margin: 0 auto;
+	padding: 0;
+	position: absolute;
+	width: 900px;
+	z-index: 200;
+}*/
+
+#separation-one {
+	background: #333333 url(../img/linear-background.png) 50% 0 fixed no-repeat;
+	color: white;
+	height: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+#third{
+	background: url(../img/lanau.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 450px;
+	padding: 100px 0 0 0;	
+}
+
+#separation-two {
+	background: #333333 url(../img/linear-background.png) 50% 0 fixed no-repeat;
+	color: white;
+	height: 600px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0;
+}
+
+#fourth{
+	background: url(../img/disciplina.jpg) 50% 0 no-repeat fixed;
+	color: white;
+	height: 450px;
+	padding: 100px 0 0 0;	
+}
+
+
+
+#separation-three{
+	background-image: url(../img/linear-background.png), #333333;
+	background: #333333 url(../img/linear-background.png) 50% 0 fixed no-repeat;
+	height: 1000px;
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+}
+
+
+/*RESPONSIVE DESIGN CSS*/
+/*3 SCREEN WIDTH SET. LAPTOP&TABLET&DEVICE*/
+
+/*LAPTOP*/
+
+@media (max-width: 1280px) {
+
+/*FLOATING ELEMENTS*/
+
+
+.float-right {
+	right: 100px;
+}
+
+.telling > img {
+	width: 90%;
+}
+
+} 
+
+/*TABLET*/
+
+@media (min-width: 780px) {
+
+
+
+
+}
+
+/*MOBILE*/
+
+@media (min-width: 330px) {
+
+
+
+
+}
+

@@ -1,71 +1,151 @@
-<!doctype html>
-<html>
-  <head>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NAU3</title>
+<!-- INFO -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Nau3 by icurdu</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Construint capacitats col·lectives ">
+    <meta name="author" content="Veritas">
+<!-- Favicons -->
+<link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+<!-- Styles CSS3 -->
+<link href="assets/css/nau3parallax.css" rel="stylesheet" type="text/css" />
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Nau3</h1>
-        <p>construint capacitats colectives</p>
+<!-- Google Web Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css'>
 
-        <p class="view"><a href="https://github.com/icurdu/nau3">View the Project on GitHub <small>icurdu/nau3</small></a></p>
+<!-- Scripts -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('#nav').localScroll(800);
+	
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	$('#intro').parallax("50%", 0.1);
+	$('#separation-one').parallax("50%", 0.1);
+	$('.bg').parallax("50%", 0.4);
+	$('#third').parallax("50%", 0.3);
+	$('#separation-three').parallax("50%", 0.1);
+
+})
+</script>
+
+</head>
 
 
-        <ul>
-          <li><a href="https://github.com/icurdu/nau3/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/icurdu/nau3/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/icurdu/nau3">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<body>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+	<!-- SECOND, THIRD I FOURTH SON LAS IMAGENES, QUE SE CAMBIAN DESDE EL ARCHIVO CSS nau3parallax.css -->
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<!-- NAVBAR LATERAL NAU3 -->
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+	<ul id="nav">
+		<li><a href="#intro" title="Next Section"><img src="assets/ico/n.png" alt="Link" /></a></li>
+	    <li><a href="#second" title="Next Section"><img src="assets/ico/a.png" alt="Link" /></a></li>
+	    <li><a href="#third" title="Next Section"><img src="assets/ico/u.png" alt="Link" /></a></li>
+	    <li><a href="#separation-three" title="Next Section"><img src="assets/ico/3.png" alt="Link" /></a></li>
+	</ul>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<!-- INTRO -->
+	
+	<div id="intro">
+		<div class="story telling">
+	    	<center>
+	    		<img src="assets/img/nau3.png">
+			<div class="float-center">
+				<h3>Construint capacitats col·lectives</h3>
+	        	<div class="btn nau">
+	        		<a href="#separation-three" title="Yeah!"> Participa!</a>
+	        	</div>
+	        </center>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#intro-->
+	
+<!-- SECOND (FOTO COLABORATIU) -->
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+	<div id="second">
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+	</div> <!--#second-->
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<!-- SEPARATION-ONE (TEXT COLABORATIU) -->
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+	<div id="separation-one">
+		<div class="story"><div class="bg"></div>
+			<div class="float-left">
+				<img src="assets/img/colaboramolt.png">
+			</div>
+	    	<div class="float-right ">
+	    		<h2>Col·laboració</h2>
+	            <p>Actualment, hi participen activament més de 50 alumnes de la Pau Gargallo, ajudant, participant, coordinant, cooperant, ensenyant, aprenent i treballant en equip per fer de la NAU3 un projecte cada dia més impresionant.</p>
+	            <div class="btn nau">
+	        		<a href="#separation-three" title="Yeah!"> Participa!</a>
+	        	</div>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--#separation-one-->
+	
+<!-- THIRD (FOTO MULTIDISCIPLINAR) -->
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+	<div id="third">
+	</div> <!--#third-->
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<!-- SEPARATION TWO (TEXT MULTIDISCIPLINAR) -->
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/icurdu">icurdu</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+	<div id="separation-two">
+		<div class="story"><div class="bg"></div>
+
+			<div class="float-left">
+	        	<img src="assets/img/multidisciplina.png">
+	        </div>
+	    	<div class="float-right">
+	            <h2>Multidisciplinar</h2>
+	            <p>Com una orquesta simfònica, tothom aporta el seu granet de sorra. Il·lustradors, escultors, grafistes, dissenyadors, fusters, estudiants,... tothom aporta allò que sap fer i es barrejen els coneixements i les experiències. Que pot sortir de la escultura i la animació? I de la il·lustració i el disseny?</p>
+	            <div class="btn nau">
+	        		<a href="#separation-three" title="Yeah!"> Participa!</a>
+	        	</div>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--.separation-two-->
+
+
+<!-- FOURTH (FOTO NAU3 GENT) -->
+
+	    <div id="fourth">
+	</div> <!--#fourth-->
+
+<!-- SEPARATION THREE (FOOTER, SOCIALMEDIA&CARTELERIA) -->
+
+	<div id="separation-three">
+		<div class="story"><div class="bg"></div>
+	    	<div class="center">
+	            <h1>I tu...</h1>
+	            <h2>Que faràs a la NAU3? Participa!</h2>
+	            <div class="btn nauthree nau">
+	        		<a href="programacio-i-carteleria.html" title="Yeah!"> Consulta la programació i els cartells</a>
+	        	</div>
+	        	<div class="btn nauthree nau">
+	        		<a href="http://www.facebook.com/nautres" title="Yeah!">Segueix-nos a Facebook</a>
+	        	</div>
+	        </div>
+	    </div> <!--.story-->
+	</div> <!--.separatrion-three-->
+	
+
+		    
+</body>
 </html>
