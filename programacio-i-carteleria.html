@@ -53,8 +53,8 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Inici</a></li>
             <li><a href="#cartells">Cartells</a></li>
-            <li><a href="#programacio">Programació</a></li>
-            <li><a href="#localització">Localització</a></li>
+            <li><a href="#timeline">Programació</a></li>
+            <li><a href="#localitzacio">Localització</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -119,10 +119,10 @@
         <p>Descobreix el que farem aquest any a la NAU3! </p>
         
 	        <div class=" btn nau ">
-		        <a role="button">Cartells</a>
-		        <a role="button">Programació</a>
-		        <a role="button">Can Sant Pere</a>
-		        <a role="button">Localització</a>
+		        <a href="#cartells" role="button">Cartells</a>
+		        <a href="#timeline" role="button">Programació</a>
+		        <!-- <a role="button">Can Sant Pere</a> -->
+		        <a href="#localitzacio" role="button">Localització</a>
 	    	</div>
 		</center>
 
@@ -132,6 +132,9 @@
 
 
 	<div class="container">
+    <div class="page-header">
+        <h1 id="cartells">Carteleria</h1>
+    </div>
 	<div class="row">
         <!-- Boxes de Acoes -->
     	<div class="col-xs-12 col-sm-6 col-lg-4">
@@ -430,7 +433,15 @@
     </ul>
 </div>
 
-	
+<div class="container">
+    <div class="page-header">
+        <h1 id="localitzacio">Localització</h1>
+    </div>
+  </div>
+
+	<div class="map-frame">
+    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://mapsengine.google.com/map/embed?mid=zWw4NeKGT3xc.kp0knEJkaL4g"></iframe>
+    </div>
 
 		    
 </body>
