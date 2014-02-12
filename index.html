@@ -4,25 +4,31 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>NAU3</title>
+
 <!-- INFO -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tu Fas la NAU3!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Noves formes de diàleg i intercanvi">
     <meta name="author" content="NAU3">
+
 <!-- Favicons -->
 <link rel="shortcut icon" href="assets/ico/favicon.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
 <!-- Styles CSS3 -->
-<link href="assets/css/nau3parallax.css" rel="stylesheet" type="text/css" />
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/nau3parallax.css" rel="stylesheet" type="text/css">
 
 <!-- Google Web Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css'>
 
 <!-- Scripts -->
+<!--  
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.parallax-1.1.3.js"></script>
 <script type="text/javascript" src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
@@ -42,7 +48,7 @@ $(document).ready(function(){
 	$('#separation-three').parallax("50%", 0.1);
 
 })
-</script>
+</script>-->
 
 </head>
 
@@ -53,29 +59,29 @@ $(document).ready(function(){
 
 <!-- NAVBAR LATERAL NAU3 -->
 
-	<ul id="nav">
+<!-- 	<ul id="nav">
 		<li><a href="#intro" title="Next Section"><img src="assets/ico/n.png" alt="Link" /></a></li>
 	    <li><a href="#second" title="Next Section"><img src="assets/ico/a.png" alt="Link" /></a></li>
 	    <li><a href="#third" title="Next Section"><img src="assets/ico/u.png" alt="Link" /></a></li>
 	    <li><a href="#separation-three" title="Next Section"><img src="assets/ico/3.png" alt="Link" /></a></li>
-	</ul>
+	</ul> -->
 
 <!-- INTRO -->
-	
+	<center>
 	<div id="intro">
-		<div class="story telling">
-	    	<center>
-	    		<img src="assets/img/nau3.png">
-			<div class="float-center">
-				<h2>Tu fas la NAU3</h2>
-	        	<div class="btn nau">
-	        		<a href="#separation-three" title="Yeah!"> Participa!</a>
-	        	</div>
-	        </center>
-	        </div>
-	    </div> <!--.story-->
+		<div class="container">
+	    	<div class="row">
+		    	<div class="col-md-12">	
+		    		<img class="img-responsive sombreado" src="assets/img/nau3.jpg">
+					<h2 class="featurette-heading">Noves formes de diàleg i intercanvi</h2>
+		        	<div class="btn nau">
+		        		<a href="#separation-three" title="Yeah!"> Participa!</a>
+		        	</div>
+		        </div> <!--.col-md-12-->
+	    	</div> <!--.row-->
+	    </div> <!--.container-->
 	</div> <!--#intro-->
-	
+	</center>
 <!-- SECOND (FOTO COLABORATIU) -->
 
 	<div id="second">
@@ -85,19 +91,23 @@ $(document).ready(function(){
 <!-- SEPARATION-ONE (TEXT COLABORATIU) -->
 
 	<div id="separation-one">
-		<div class="story"><div class="bg"></div>
-			<div class="float-left">
-				<img src="assets/img/colaboramolt.png">
-			</div>
-	    	<div class="float-right ">
-	    		<h2>Col·laboració</h2>
-	            <p>Actualment, hi participen activament més de 50 alumnes de la Pau Gargallo, ajudant, participant, coordinant, cooperant, ensenyant, aprenent i treballant en equip per fer de la NAU3 un projecte cada dia més impresionant.</p>
-	            <div class="btn nau">
-	        		<a href="#separation-three" title="Yeah!"> Participa!</a>
-	        	</div>
-	        </div>
-	    </div> <!--.story-->
-	</div> <!--#separation-one-->
+		<div class="container marketing">
+			<div class="row featurette">
+				<div class="col-md-5">
+						<img class="featurette-image img-responsive text-center" src="assets/img/colaboramolt.png">
+		    	</div>
+
+		    	<div class="col-md-7">
+			    		<h2 class="featurette-heading">Col·laboratiu</h2>
+			            <p>Actualment, hi participen activament més de 50 alumnes de la Pau Gargallo, ajudant, participant, coordinant, cooperant, ensenyant, aprenent i treballant en equip per fer de la NAU3 un projecte cada dia més increíble.</p>
+			            <div class="btn nau">
+			        		<a href="#separation-three" title="Yeah!"> Participa!</a>
+			        	</div> 
+
+		        </div> <!--.col-md-7-->
+	        </div> <!--.row-featurette-->
+	    </div> <!--.container-->
+	</div> <!--#separation-two-->
 	
 <!-- THIRD (FOTO MULTIDISCIPLINAR) -->
 
@@ -107,44 +117,66 @@ $(document).ready(function(){
 <!-- SEPARATION TWO (TEXT MULTIDISCIPLINAR) -->
 
 	<div id="separation-two">
-		<div class="story"><div class="bg"></div>
+		<div class="container marketing">
+			<div class="row featurette">
+				<div class="col-md-5">
+					<img class="featurette-image img-responsive"src="assets/img/multidisciplina.png">
+		    	</div> <!--.col-md-5-->
 
-			<div class="float-left">
-	        	<img src="assets/img/multidisciplina.png">
-	        </div>
-	    	<div class="float-right">
-	            <h2>Multidisciplinar</h2>
-	            <p>Com una orquesta simfònica, tothom aporta el seu granet de sorra. Il·lustradors, escultors, grafistes, dissenyadors, fusters, estudiants,... tothom aporta allò que sap fer i es barrejen els coneixements i les experiències. Que pot sortir de la escultura i la animació? I de la il·lustració i el disseny?</p>
-	            <div class="btn nau">
-	        		<a href="#separation-three" title="Yeah!"> Participa!</a>
-	        	</div>
-	        </div>
-	    </div> <!--.story-->
-	</div> <!--.separation-two-->
+		    	<div class="col-md-7">
+			    		<h2 class="featurette-heading">Multidisciplinar</h2>
+			            <p>Com una orquesta simfònica, tothom aporta el seu granet de sorra. Il·lustradors, escultors, grafistes, dissenyadors, fusters, estudiants,... tothom aporta allò que sap fer i es barrejen els coneixements i les experiències. Que pot sortir de la escultura i la animació? I de la il·lustració i el disseny?</p>
+			            
+			            <div class="btn nau">
+			        		<a href="#separation-three" title="Yeah!"> Participa!</a>
+			        	</div>
+			        	
+		        </div> <!--.col-md-7-->
+	        </div> <!--.row-featurette-->
+	    </div> <!--.container-->
+	</div> <!--#separation-two-->
 
 
 <!-- FOURTH (FOTO NAU3 GENT) -->
 
 	    <div id="fourth">
-	</div> <!--#fourth-->
+		</div> <!--#fourth-->
 
 <!-- SEPARATION THREE (FOOTER, SOCIALMEDIA&CARTELERIA) -->
 
 	<div id="separation-three">
-		<div class="story"><div class="bg"></div>
-	    	<div class="center">
-	            <h1>I tu...</h1>
-	            <h2>Que faràs a la NAU3? Participa!</h2>
-	            <div class="btn nauthree nau">
-	        		<a href="programacio-i-carteleria.html" title="Yeah!"> Consulta la programació i els cartells</a>
-	        	</div>
-	        	<div class="btn nauthree nau">
-	        		<a href="http://www.facebook.com/nautres" title="Yeah!">Segueix-nos a Facebook</a>
-	        	</div>
-	        </div>
-	    </div> <!--.story-->
+		<div class="container">
+			<div class="row">
+				<center>
+				<div class="col-md-12">
+					<h1>I tu...</h1>
+					<h2>Que faràs aquest any a la NAU3?</h2>
+					<hr class="featurette-divider">
+				</div> <!--.col-md-12-->
+			</div> <!--.row-->
+					
+
+				<div class="row">
+			        <div class="col-md-4 text-center">
+			          <a href="http://www.facebook.com/nau3bdn"><img class="img-circle" src="assets/img/segueix.png" alt="segueix-nos a facebook"></a>
+			          <h3>Segueix</h3>
+			          <p>Segueix-nos a facebook i no et perdis res</p>
+			        </div><!-- /.col-lg-4 -->
+			        <div class="col-md-4 text-center">
+			          <a href="programacio-i-carteleria.html"><img class="img-circle" src="assets/img/descobreix.png" alt="Generic placeholder image"></a>
+			          <h3>Descobreix</h3>
+			          <p>Descobreix el que pots fer aquest any. Tallers, conferències, festa,...</p>
+			        </div><!-- /.col-lg-4 -->
+			        <div class="col-md-4 text-center">
+			          <a href="programacio-i-carteleria.html"><img class="img-circle" src="assets/img/consulta.png" alt="Generic placeholder image"></a>
+			          <h3>Consulta</h3>
+			          <p>Consulta la programació i els llocs on es faran els events</p>
+			        </div><!-- /.col-lg-4 -->
+			      </div><!-- /.row -->
+			</div> <!--.row-->
+		</div> <!--.container-->
 	</div> <!--.separatrion-three-->
-	
+	</center>
 
 		    
 </body>
