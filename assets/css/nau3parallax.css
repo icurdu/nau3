@@ -73,6 +73,16 @@ box-shadow:         5px 5px 14px 0px rgba(0, 0, 0, 1);
 	padding-bottom: 40px;
 }  
 
+.img-circle {
+	padding:5px;
+	background: #FFF;
+	-webkit-box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.4);
+-moz-box-shadow:    0px 0px 10px 5px rgba(255, 255, 255, 0.4);
+box-shadow:         0px 0px 10px 5px rgba(255, 255, 255, 0.4);
+
+
+}
+
 /*BUTTONS*/
 .nauthree {
 	margin-bottom: 30px;
@@ -253,6 +263,14 @@ box-shadow:         5px 5px 14px 0px rgba(0, 0, 0, 1);
 	padding: 40px 0 0 0;
 	width: auto;
 
+}
+
+#footer {
+	background: #222222;
+	height: auto; /*Height is setted by the content into the container*/
+	margin: 0 auto;
+	padding: 40px 0 0 0;
+	width: auto;
 }
 
 
