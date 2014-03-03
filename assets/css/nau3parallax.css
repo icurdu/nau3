@@ -158,16 +158,19 @@ box-shadow:         0px 0px 10px 5px rgba(255, 255, 255, 0.4);
 
 /*NAVBAR PARALLAX*/
 
-/*#nav{
+#nav{
 	list-style: none;
 	position: fixed;
 	right: 20px;
+	margin-top: 20px;
+	z-index: 9999;
 }
 
 #nav li{
 	margin: 0 0 15px 0;	
 	-webkit-transition:  -webkit-transform 0.2s;
     transition: transform 0.2s;
+    opacity: 0.8;
 }
 
 #nav li:hover{
@@ -176,7 +179,7 @@ box-shadow:         0px 0px 10px 5px rgba(255, 255, 255, 0.4);
     transform:scale(1.2,1.2);
 }	
 }
-*/
+
 #header, #intro, #second,{
 	width: 100%;
 }
@@ -391,7 +394,15 @@ h3 {
 	height: 200px;
 }
 
+#nav li > a > img{
+	height: 35px;
+
 }
+
+#nav {
+}
+}
+
 
 
 

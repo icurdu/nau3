@@ -68,7 +68,78 @@ body {
   width: 100%;
 }
 
+.img-responsive {
+  -webkit-box-shadow: -6px -6px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: -6px -6px 10px rgba(0, 0, 0, 0.3);
 
+}
+
+
+.footer {
+  width: 100%;
+  background: #222222;
+  bottom: 0;
+  margin-top: 50px;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #FFF;
+}
+
+.footer > a > img {
+  box-shadow: none !important;
+  margin: 20px;
+}
+
+.nav > li > a {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.nav > li > a:hover {
+  transition: all ease-in-out 0.2s;
+  }
+
+.separator-footer {
+  border-left: 1px solid #888888;
+
+}
+
+
+
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #1F81B8;
+}
+
+.navbar {
+  border: none;
+}
+
+
+.vid {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.vid iframe,
+.vid object,
+.vid embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.encuadre {
+  /*border: 3px solid #5A5A5A;*/
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -358,6 +429,9 @@ font-size: 25px;
   font-weight: bold;
 }
 
+.box > .icon > .info > h3.title {
+  font-size: 20px;
+}
 
 
 }  
