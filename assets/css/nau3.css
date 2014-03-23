@@ -3,6 +3,9 @@
 
 body {
   padding-top:50px;
+  -webkit-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+
 }
 
 .jumbotron {
@@ -93,7 +96,9 @@ body {
 
 .nav > li > a {
   font-size: 16px;
-  font-style: italic;
+  font-style: normal;
+  font-weight: 200;
+  text-transform: lowercase;
 }
 
 .nav > li > a:hover {
@@ -206,27 +211,107 @@ body {
   padding-top: 40px;
 }
 
-.box > .icon { text-align: center; position: relative; color: #333333; }
-.box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #000000; vertical-align: middle; }
-.box > .icon:hover > .image { background: #F3A314; }
-.box > .icon > .image > img { margin-bottom: 13px; }
-.box > .icon:hover > .image > i { color: white !important; }
-.box > .icon > .info { margin-top: -24px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; padding: 15px 0 10px 0; }
-.box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
-.box > .icon > .info > h3.title { font-family: "Trocchi",sans-serif !important; font-size: 35px; color: #222; }
-.box > .icon > .info > p { font-family: "Roboto",sans-serif !important; font-size: 13px; color: #666; line-height: 1.5em; margin: 20px;}
-.box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a { color: #222; }
-.box > .icon > .info > .more a { font-family: "Roboto",sans-serif !important; margin-top: 20px; font-size: 12px; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none; }
-.box > .icon:hover > .info > .more > a {color: #5A5A5A; padding: 8px 10px; border: solid 2px #5A5A5A; transition: all ease-in-out 0.2s;   }
-.box .space { height: 30px; }
-.more { margin-top: 30px; margin-bottom: 20px;-webkit-transition:  -webkit-transform 0.2s; transition: transform 0.2s;}
+
+
+.box > .icon { 
+  text-align: center; 
+  position: relative; 
+  color: #333333; 
+}
+.box > .icon > .image { 
+  position: relative; 
+  z-index: 2; 
+  margin: auto; 
+  width: 88px; 
+  height: 88px; 
+  border: 8px solid white; 
+  line-height: 88px; 
+  border-radius: 50%; 
+  background: #000000; 
+  vertical-align: middle; 
+}
+
+.box > .icon:hover > .image { 
+  background: #F3A314; 
+}
+
+.box > .icon > .image > img { 
+  margin-bottom: 13px; 
+}
+
+.box > .icon:hover > .image > i {
+ color: white !important; 
+}
+
+.box > .icon > .info { 
+  margin-top: -24px; 
+  background: rgba(0, 0, 0, 0.04); 
+  border: 1px solid #e0e0e0; 
+  padding: 15px 0 10px 0; 
+}
+
+.box > .icon:hover > .info { 
+  background: rgba(0, 0, 0, 0.04); 
+  border-color: #e0e0e0;
+   color: white; 
+ }
+
+.box > .icon > .info > h3.title {
+ font-family: "Trocchi",sans-serif !important; 
+ font-size: 35px; 
+ color: #222;
+}
+
+.box > .icon > .info > p { 
+  font-family: "Roboto",sans-serif !important; 
+  font-size: 13px; 
+  color: #666; 
+  line-height: 1.5em;
+   margin: 20px;
+}
+.box > .icon:hover > .info > h3.title, 
+.box > .icon:hover > .info > p, 
+.box > .icon:hover > .info > .more > a { 
+  color: #222; 
+}
+
+.box > .icon > .info > .more a { 
+  font-family: "Roboto",sans-serif !important; 
+  margin-top: 20px; 
+  font-size: 12px; 
+  color: #222; 
+  line-height: 12px; 
+  text-transform: uppercase; 
+  text-decoration: none; 
+}
+
+.box > .icon:hover > .info > .more > a {
+  color: #5A5A5A; 
+  padding: 8px 10px; 
+  border: solid 2px #5A5A5A; 
+  transition: all ease-in-out 0.2s;   
+}
+
+.box .space { 
+  height: 30px; 
+}
+
+.more { margin-top: 30px;
+ margin-bottom: 20px;
+ -webkit-transition:  
+    -webkit-transform 0.2s; transition: transform 0.2s;
+  }
 
 .icon > a > img {
   margin-bottom: 30px;
   opacity: 0.95;
 }
 
-.icon > a:hover > img {opacity:1; transition: all ease-in-out 0.2s;}
+.icon > a:hover > img {
+  opacity:1; 
+  transition: all ease-in-out 0.2s;
+}
+
 
 
 .modal-content {
@@ -235,7 +320,6 @@ body {
 }
           
   
-
 .timeline {
   list-style: none;
   padding: 20px 0 20px;

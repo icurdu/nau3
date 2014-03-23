@@ -5,6 +5,8 @@
 body {
   padding-top: 100px;
   color: #5a5a5a;
+   -webkit-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
 }
 
 
