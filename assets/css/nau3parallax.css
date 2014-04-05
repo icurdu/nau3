@@ -193,7 +193,7 @@ box-shadow:         0px 0px 10px 5px rgba(255, 255, 255, 0.4);
 /*FOTOS PARALLAX*/
 
 #intro{
-	background:url(../img/022.jpg) 50% 0 fixed;
+	background:url(../img/caleidoscopia.jpg) 50% 0 fixed;
 	/*background-color:#333333; */
 	color: white;
 	height: auto; /*Height is setted by the content into the container*/
@@ -251,7 +251,7 @@ box-shadow:         0px 0px 10px 5px rgba(255, 255, 255, 0.4);
 }
 
 #fourth{
-	background: url(../img/disciplina.jpg) 50% 0 no-repeat fixed;
+	background: url(../img/process.jpg) 50% 0 no-repeat fixed;
 	color: white;
 	height: 400px; /*Set height to view the image*/
 	padding: 100px 0 0 0;
